@@ -13,6 +13,6 @@ Project is running on 127.0.0.1:8000
 
 `docker-compose run web python3 manage.py createsuperuser`
 
-Link to the heroku deployed project [here]()
+Link to the heroku deployed project [here](https://friendly-snifflee.herokuapp.com)
 
-Link to Postman collection [here]()
+Link to Postman collection [here](https://www.postman.com/developstoday/workspace/Test~c5d48f94-277c-495a-910c-eda5c18cbbb3/collection/10800187-3cf98c81-a4ee-4880-b1f4-03c4d1146c90)
