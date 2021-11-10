@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    command: sh -c "python3 manage.py migrate && python3 manage.py runserver 0.0.0.0:8000"
+    volumes:
+      - .:/usr/src/app/
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+    environment:
+      - DATABASE_URL=postgres://friendlysniffle:friendlysniffle@db:5432/friendlysniffle
+  db:
+    image: postgres:13-alpine
+    environment:
+      - POSTGRES_DB=friendlysniffle
+      - POSTGRES_USER=friendlysniffle
+      - POSTGRES_PASSWORD=friendlysniffle
+    ports:
+      - "5432:5432"

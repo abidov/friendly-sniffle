@@ -32,7 +32,6 @@ INSTALLED_APPS = [
     "news.apps.NewsConfig",
     # third party apps
     "rest_framework",
-    "corsheaders",
 ]
 
 MIDDLEWARE = [
